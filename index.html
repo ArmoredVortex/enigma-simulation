@@ -8,8 +8,47 @@
         <script src="./scripts/index.js"></script>
     </head>
     <body>
-        <input type="text">
-        <input type="text">
-        <!-- <input type="text"> -->
+        <div class="output"><h1 class="output-text" id="output-text">Hi</h1></div>
+        <div class="keyboard-base">
+            <div class="key" onclick="encode('q')">Q</div>
+            <div class="key" onclick="encode('w')">w</div>
+            <div class="key" onclick="encode('e')">E</div>
+            <div class="key" onclick="encode('r')">R</div>
+            <div class="key" onclick="encode('t')">T</div>
+            <div class="key" onclick="encode('y')">Y</div>
+            <div class="key" onclick="encode('u')">U</div>
+            <div class="key" onclick="encode('i')">I</div>
+            <div class="key" onclick="encode('o')">O</div>
+            <div class="key" onclick="encode('p')">P</div>
+            <div></div>
+            <div class="key" onclick="encode('a')">A</div>
+            <div class="key" onclick="encode('s')">S</div>
+            <div class="key" onclick="encode('d')">D</div>
+            <div class="key" onclick="encode('f')">F</div>
+            <div class="key" onclick="encode('g')">G</div>
+            <div class="key" onclick="encode('h')">H</div>
+            <div class="key" onclick="encode('j')">J</div>
+            <div class="key" onclick="encode('k')">K</div>
+            <div class="key" onclick="encode('l')">L</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="key" onclick="encode('z')">Z</div>
+            <div class="key" onclick="encode('x')">X</div>
+            <div class="key" onclick="encode('c')">C</div>
+            <div class="key" onclick="encode('v')">V</div>
+            <div class="key" onclick="encode('b')">B</div>
+            <div class="key" onclick="encode('n')">N</div>
+            <div class="key" onclick="encode('m')">M</div>
+        </div>
+        <div class="settings">
+            <input type="text" class="settings-box" onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" maxlength="1">
+            <input type="text" class="settings-box" onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" maxlength="1">
+            <input type="text" class="settings-box" onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" maxlength="1">
+        </div>
     </body>
 </html>

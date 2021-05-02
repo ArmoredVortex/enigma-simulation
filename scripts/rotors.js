@@ -1,5 +1,5 @@
 function getKeyByValue(object, value) {
-    return Object.keys(object).find(key => object[key] === value);
+    return parseInt(Object.keys(object).find(key => object[key] === value));
 }
 
 const rotor1 = {
