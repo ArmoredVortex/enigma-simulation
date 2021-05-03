@@ -37,8 +37,7 @@ body * {
 }
 
 .key:hover {
-  border: 1px solid #eeeeee;
-  
+  border: 1px solid #eeeeee; 
 }
 .settings {
     top: 80%;
