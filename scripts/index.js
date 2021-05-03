@@ -5,6 +5,15 @@ let config1Val;
 let config2Val;
 let config3Val;
 window.onkeydown = (key) => {
+    var elm1 = document.getElementById('config1');
+    var elm2 = document.getElementById('config2');
+    var elm3 = document.getElementById('config3');
+    var focus1 = (document.activeElement === elm1);
+    var focus2 = (document.activeElement === elm2);
+    var focus3 = (document.activeElement === elm3);
+    if(focus1 || focus2 || focus3){
+        return;
+    }
     if (key.keyCode < 65 || key.keyCode > 90) return;
     char = String.fromCharCode(key.keyCode).toLowerCase();
     main(char);
