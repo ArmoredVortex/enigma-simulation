@@ -103,6 +103,7 @@ function main(char) {
 }
 
 function clear() {
+    length = 0;
     output.innerHTML = ''
     config3.value = numValue(1);
     config3Val = config3.value;
