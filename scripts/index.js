@@ -4,6 +4,12 @@ let config3;
 let config1Val;
 let config2Val;
 let config3Val;
+let output;
+let length = 0;
+
+function addSpace() {
+    output.innerHTML += ' '
+}
 
 function increment() {
     if(letterValue(config3Val) < 26){
@@ -68,7 +74,7 @@ function reverseRotorVal(rotor,configVal,char) {
     return outVal;
 }    
 function main(char) {
-    let output = document.getElementById('output-text');
+    output = document.getElementById('output-text');
     config1 = document.getElementById('config1')
     config2 = document.getElementById('config2')
     config3 = document.getElementById('config3')
@@ -84,4 +90,13 @@ function main(char) {
     let reverseRotor2Out = reverseRotorVal(rotor2,config2Val,reverseRotor1Out);
     let reverseRotor3Out = reverseRotorVal(rotor3,config3Val,reverseRotor2Out);
     output.innerHTML += numValue(reverseRotor3Out);
+    length += 1;
+    if(length == 5){
+        length = 0;
+        addSpace();
+    }
+}
+
+function clear() {
+    console.log('hi')
 }

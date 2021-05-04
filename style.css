@@ -39,6 +39,32 @@ body * {
 .key:hover {
   border: 1px solid #eeeeee; 
 }
+.spacebar {
+    background-color: rgb(243, 243, 243);
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column: span 4;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+    color: black;
+} 
+.spacebar:hover{
+    border: 1px solid #eeeeee; 
+}
+.clear {
+    background-color: rgb(243, 243, 243);
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column: span 4;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+    color: black;
+} 
+.clear:hover {
+    border: 1px solid #eeeeee; 
+}
 .settings {
     top: 80%;
     left: 50%;
