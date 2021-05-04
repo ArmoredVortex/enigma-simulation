@@ -59,12 +59,13 @@ body * {
 .output {
     height: 200px;
     position: relative;
-    border: 3px solid green;
-  justify-content: center;
+    border: 3px solid #00CE7C;
+    justify-content: center;
 }
 .output-text {
     margin: 0;
     position: absolute;
+    float: right;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
