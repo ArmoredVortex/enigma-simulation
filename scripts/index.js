@@ -72,8 +72,13 @@ function reverseRotorVal(rotor,configVal,char) {
         outVal += 26;
     }
     return outVal;
-}    
+}  
+
 function main(char) {
+    if(char == 'clear'){
+        clear()
+        return;
+    }
     output = document.getElementById('output-text');
     config1 = document.getElementById('config1')
     config2 = document.getElementById('config2')
@@ -98,5 +103,11 @@ function main(char) {
 }
 
 function clear() {
-    console.log('hi')
+    output.innerHTML = ''
+    config3.value = numValue(1);
+    config3Val = config3.value;
+    config2.value = numValue(1);
+    config2Val = config2.value;
+    config1.value = numValue(1);
+    config1Val = config1.value;
 }
